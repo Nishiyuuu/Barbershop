@@ -1,0 +1,101 @@
+.masters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.masters-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  color: #fff5f5;
+  text-align: center;
+}
+
+.carousel-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden; /* Ховаємо те, що не влізає */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px; /* Відступ між картками */
+  transition: transform 0.5s ease;
+}
+
+.card {
+  min-width: calc(25% - 15px); /* Показуємо 4 картки одночасно */
+  text-align: center;
+}
+
+.image-box {
+  height: 354px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.name {
+  margin-bottom: 58px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff5f5;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.socials {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0.8;
+}
+
+/* Стилі для пагінації */
+.nav-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 32px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.prev-btn,
+.next-btn {
+  stroke-width: 2px;
+  stroke: #fff5f5;
+  background: none;
+  border: none;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.social-media {
+  fill: #fff5f5;
+}
