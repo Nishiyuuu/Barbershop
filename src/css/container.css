@@ -3,7 +3,7 @@
   min-width: 320px;
   max-width: 343px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 72px;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 786px) {
